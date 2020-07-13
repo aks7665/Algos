@@ -13,11 +13,8 @@ function palindrome(str) {
     // return str === rev;
 
     // Solution 2
-    return str.split('').every((char, index) => str[index] === str[(str.length - index) - 1])
+    // return str.split('').every((char, index) => str[index] === str[(str.length - index) - 1])
 
-    // Solution 3
-    const rev = str.split('').reverse().join('');
-    return str === rev;
 }
 
 module.exports = palindrome;
